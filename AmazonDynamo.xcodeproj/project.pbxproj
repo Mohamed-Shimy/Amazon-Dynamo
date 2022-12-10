@@ -11,6 +11,12 @@
 		D99B3DF52944A75300F3EAE8 /* AmazonDynamoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99B3DF42944A75300F3EAE8 /* AmazonDynamoApp.swift */; };
 		D99B3DF92944A75600F3EAE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99B3DF82944A75600F3EAE8 /* Assets.xcassets */; };
 		D99B3DFC2944A75600F3EAE8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99B3DFB2944A75600F3EAE8 /* Preview Assets.xcassets */; };
+		D99B3E0C2944ABA100F3EAE8 /* Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99B3E0B2944ABA100F3EAE8 /* Methods.swift */; };
+		D99B3E102944ABCB00F3EAE8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99B3E0F2944ABCB00F3EAE8 /* NetworkManager.swift */; };
+		D99B3E122944ABEC00F3EAE8 /* NetworkManagable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99B3E112944ABEC00F3EAE8 /* NetworkManagable.swift */; };
+		D99B3E142944AC0E00F3EAE8 /* NetworkServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99B3E132944AC0E00F3EAE8 /* NetworkServiceType.swift */; };
+		D99B3E162944AC2900F3EAE8 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99B3E152944AC2900F3EAE8 /* NetworkError.swift */; };
+		D99B3E1A2944AC5F00F3EAE8 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99B3E192944AC5F00F3EAE8 /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +26,12 @@
 		D99B3DF42944A75300F3EAE8 /* AmazonDynamoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmazonDynamoApp.swift; sourceTree = "<group>"; };
 		D99B3DF82944A75600F3EAE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D99B3DFB2944A75600F3EAE8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D99B3E0B2944ABA100F3EAE8 /* Methods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Methods.swift; sourceTree = "<group>"; };
+		D99B3E0F2944ABCB00F3EAE8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		D99B3E112944ABEC00F3EAE8 /* NetworkManagable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagable.swift; sourceTree = "<group>"; };
+		D99B3E132944AC0E00F3EAE8 /* NetworkServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceType.swift; sourceTree = "<group>"; };
+		D99B3E152944AC2900F3EAE8 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		D99B3E192944AC5F00F3EAE8 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		DE99CAB8B35B9046F27A5277 /* Pods_AmazonDynamo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmazonDynamo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -41,7 +53,6 @@
 				71A0210296B7A296E6B79120 /* Pods-AmazonDynamo.debug.xcconfig */,
 				5BEBE069022BD0527BD84351 /* Pods-AmazonDynamo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -111,6 +122,8 @@
 		D99B3E052944A84000F3EAE8 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				D99B3E172944AC4C00F3EAE8 /* Extensions */,
+				D99B3E0A2944AB7C00F3EAE8 /* Global */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -118,6 +131,7 @@
 		D99B3E062944A84D00F3EAE8 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				D99B3E082944AB4500F3EAE8 /* Remote */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -127,6 +141,65 @@
 			children = (
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		D99B3E082944AB4500F3EAE8 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				D99B3E092944AB4A00F3EAE8 /* Network */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		D99B3E092944AB4A00F3EAE8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D99B3E0D2944ABB800F3EAE8 /* Base */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D99B3E0A2944AB7C00F3EAE8 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				D99B3E0B2944ABA100F3EAE8 /* Methods.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		D99B3E0D2944ABB800F3EAE8 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D99B3E132944AC0E00F3EAE8 /* NetworkServiceType.swift */,
+				D99B3E152944AC2900F3EAE8 /* NetworkError.swift */,
+				D99B3E0E2944ABBD00F3EAE8 /* Manager */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		D99B3E0E2944ABBD00F3EAE8 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				D99B3E112944ABEC00F3EAE8 /* NetworkManagable.swift */,
+				D99B3E0F2944ABCB00F3EAE8 /* NetworkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		D99B3E172944AC4C00F3EAE8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D99B3E182944AC5600F3EAE8 /* Foundation */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D99B3E182944AC5600F3EAE8 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				D99B3E192944AC5F00F3EAE8 /* Data.swift */,
+			);
+			path = Foundation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,7 +317,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D99B3E102944ABCB00F3EAE8 /* NetworkManager.swift in Sources */,
+				D99B3E0C2944ABA100F3EAE8 /* Methods.swift in Sources */,
+				D99B3E1A2944AC5F00F3EAE8 /* Data.swift in Sources */,
 				D99B3DF52944A75300F3EAE8 /* AmazonDynamoApp.swift in Sources */,
+				D99B3E162944AC2900F3EAE8 /* NetworkError.swift in Sources */,
+				D99B3E142944AC0E00F3EAE8 /* NetworkServiceType.swift in Sources */,
+				D99B3E122944ABEC00F3EAE8 /* NetworkManagable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
