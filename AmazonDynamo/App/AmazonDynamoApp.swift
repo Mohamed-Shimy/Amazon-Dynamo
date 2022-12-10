@@ -11,7 +11,9 @@ import SwiftUI
 struct AmazonDynamoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                Text("AmazonDynamoApp")
+            }
         }
     }
 }

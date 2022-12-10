@@ -3,12 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		D99B3DF52944A75300F3EAE8 /* AmazonDynamoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99B3DF42944A75300F3EAE8 /* AmazonDynamoApp.swift */; };
-		D99B3DF72944A75300F3EAE8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99B3DF62944A75300F3EAE8 /* ContentView.swift */; };
 		D99B3DF92944A75600F3EAE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99B3DF82944A75600F3EAE8 /* Assets.xcassets */; };
 		D99B3DFC2944A75600F3EAE8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99B3DFB2944A75600F3EAE8 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +15,6 @@
 /* Begin PBXFileReference section */
 		D99B3DF12944A75300F3EAE8 /* AmazonDynamo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmazonDynamo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D99B3DF42944A75300F3EAE8 /* AmazonDynamoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmazonDynamoApp.swift; sourceTree = "<group>"; };
-		D99B3DF62944A75300F3EAE8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D99B3DF82944A75600F3EAE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D99B3DFB2944A75600F3EAE8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,9 +49,11 @@
 		D99B3DF32944A75300F3EAE8 /* AmazonDynamo */ = {
 			isa = PBXGroup;
 			children = (
-				D99B3DF42944A75300F3EAE8 /* AmazonDynamoApp.swift */,
-				D99B3DF62944A75300F3EAE8 /* ContentView.swift */,
-				D99B3DF82944A75600F3EAE8 /* Assets.xcassets */,
+				D99B3E022944A7D900F3EAE8 /* App */,
+				D99B3E032944A80300F3EAE8 /* Resources */,
+				D99B3E062944A84D00F3EAE8 /* Services */,
+				D99B3E052944A84000F3EAE8 /* Core */,
+				D99B3E072944A85800F3EAE8 /* Modules */,
 				D99B3DFA2944A75600F3EAE8 /* Preview Content */,
 			);
 			path = AmazonDynamo;
@@ -65,6 +65,43 @@
 				D99B3DFB2944A75600F3EAE8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D99B3E022944A7D900F3EAE8 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D99B3DF42944A75300F3EAE8 /* AmazonDynamoApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D99B3E032944A80300F3EAE8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D99B3DF82944A75600F3EAE8 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D99B3E052944A84000F3EAE8 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		D99B3E062944A84D00F3EAE8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D99B3E072944A85800F3EAE8 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +133,7 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1410;
+				ORGANIZATIONNAME = "Mohamed Shimy";
 				TargetAttributes = {
 					D99B3DF02944A75300F3EAE8 = {
 						CreatedOnToolsVersion = 14.1;
@@ -103,7 +141,7 @@
 				};
 			};
 			buildConfigurationList = D99B3DEC2944A75300F3EAE8 /* Build configuration list for PBXProject "AmazonDynamo" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -137,7 +175,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D99B3DF72944A75300F3EAE8 /* ContentView.swift in Sources */,
 				D99B3DF52944A75300F3EAE8 /* AmazonDynamoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
