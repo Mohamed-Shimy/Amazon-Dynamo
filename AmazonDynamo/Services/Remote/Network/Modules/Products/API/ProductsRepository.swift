@@ -11,7 +11,7 @@ import Combine
 
 class ProductsRepository: NetworkManager<ProductsAPI>, ProductsRepositoryProtocol {
     
-    func getWriters() -> AnyPublisher<ProductsResultResponse, Error> {
+    func getProducts() -> AnyPublisher<ProductsResultResponse, Error> {
         request(.products)
     }
 }

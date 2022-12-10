@@ -1,5 +1,5 @@
 //
-//  ProductsRepositoryProtocol.swift
+//  Typealias.swift
 //  AmazonDynamo
 //
 //  Created by Mohamed Shemy on 10/12/2022.
@@ -9,7 +9,4 @@
 import Foundation
 import Combine
 
-protocol ProductsRepositoryProtocol: AnyObject {
-    
-    func getProducts() -> AnyPublisher<ProductsResultResponse, Error>
-}
+typealias CancellableBag = Set<AnyCancellable>

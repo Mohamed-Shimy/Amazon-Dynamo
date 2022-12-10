@@ -22,6 +22,10 @@
 		D99B3E222944AE1C00F3EAE8 /* ProductsRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99B3E212944AE1C00F3EAE8 /* ProductsRepositoryProtocol.swift */; };
 		D99B3E272944AE9D00F3EAE8 /* ProductsResultResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99B3E262944AE9D00F3EAE8 /* ProductsResultResponse.swift */; };
 		D99B3E292944AEB900F3EAE8 /* ProductResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99B3E282944AEB900F3EAE8 /* ProductResponse.swift */; };
+		D99B3E2D2944AFD200F3EAE8 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99B3E2C2944AFD100F3EAE8 /* Product.swift */; };
+		D99B3E2F2944B01B00F3EAE8 /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99B3E2E2944B01B00F3EAE8 /* Typealias.swift */; };
+		D99B3E312944B03E00F3EAE8 /* ProductsViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99B3E302944B03E00F3EAE8 /* ProductsViewModelProtocol.swift */; };
+		D99B3E332944B07500F3EAE8 /* ProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99B3E322944B07500F3EAE8 /* ProductsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +46,10 @@
 		D99B3E212944AE1C00F3EAE8 /* ProductsRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsRepositoryProtocol.swift; sourceTree = "<group>"; };
 		D99B3E262944AE9D00F3EAE8 /* ProductsResultResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsResultResponse.swift; sourceTree = "<group>"; };
 		D99B3E282944AEB900F3EAE8 /* ProductResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductResponse.swift; sourceTree = "<group>"; };
+		D99B3E2C2944AFD100F3EAE8 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		D99B3E2E2944B01B00F3EAE8 /* Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
+		D99B3E302944B03E00F3EAE8 /* ProductsViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewModelProtocol.swift; sourceTree = "<group>"; };
+		D99B3E322944B07500F3EAE8 /* ProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewModel.swift; sourceTree = "<group>"; };
 		DE99CAB8B35B9046F27A5277 /* Pods_AmazonDynamo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmazonDynamo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -175,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				D99B3E0B2944ABA100F3EAE8 /* Methods.swift */,
+				D99B3E2E2944B01B00F3EAE8 /* Typealias.swift */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -234,6 +243,8 @@
 		D99B3E232944AE3100F3EAE8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				D99B3E2B2944AFC000F3EAE8 /* Models */,
+				D99B3E2A2944AFB800F3EAE8 /* ViewModel */,
 			);
 			path = Products;
 			sourceTree = "<group>";
@@ -253,6 +264,23 @@
 			children = (
 				D99B3E282944AEB900F3EAE8 /* ProductResponse.swift */,
 				D99B3E262944AE9D00F3EAE8 /* ProductsResultResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D99B3E2A2944AFB800F3EAE8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D99B3E302944B03E00F3EAE8 /* ProductsViewModelProtocol.swift */,
+				D99B3E322944B07500F3EAE8 /* ProductsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D99B3E2B2944AFC000F3EAE8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D99B3E2C2944AFD100F3EAE8 /* Product.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -374,16 +402,20 @@
 			files = (
 				D99B3E292944AEB900F3EAE8 /* ProductResponse.swift in Sources */,
 				D99B3E202944ADFC00F3EAE8 /* ProductsRepository.swift in Sources */,
+				D99B3E332944B07500F3EAE8 /* ProductsViewModel.swift in Sources */,
 				D99B3E102944ABCB00F3EAE8 /* NetworkManager.swift in Sources */,
 				D99B3E0C2944ABA100F3EAE8 /* Methods.swift in Sources */,
 				D99B3E1E2944ADB600F3EAE8 /* ProductsAPI.swift in Sources */,
 				D99B3E1A2944AC5F00F3EAE8 /* Data.swift in Sources */,
+				D99B3E2F2944B01B00F3EAE8 /* Typealias.swift in Sources */,
 				D99B3DF52944A75300F3EAE8 /* AmazonDynamoApp.swift in Sources */,
 				D99B3E162944AC2900F3EAE8 /* NetworkError.swift in Sources */,
 				D99B3E142944AC0E00F3EAE8 /* NetworkServiceType.swift in Sources */,
 				D99B3E222944AE1C00F3EAE8 /* ProductsRepositoryProtocol.swift in Sources */,
 				D99B3E122944ABEC00F3EAE8 /* NetworkManagable.swift in Sources */,
 				D99B3E272944AE9D00F3EAE8 /* ProductsResultResponse.swift in Sources */,
+				D99B3E312944B03E00F3EAE8 /* ProductsViewModelProtocol.swift in Sources */,
+				D99B3E2D2944AFD200F3EAE8 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
