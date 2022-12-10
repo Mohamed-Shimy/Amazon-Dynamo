@@ -9,10 +9,14 @@ import SwiftUI
 
 @main
 struct AmazonDynamoApp: App {
+    
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                Text("AmazonDynamoApp")
+                ProductsView(viewModel: ProductsViewModel())
+                
+                // For Sidebar Navigation
+                Label("Select product from the list", systemImage: "arrowshape.turn.up.backward.2")
             }
         }
     }
