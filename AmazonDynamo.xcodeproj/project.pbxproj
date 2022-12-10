@@ -7,16 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57BD7FA3947BF1C06EB20603 /* Pods_AmazonDynamo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE99CAB8B35B9046F27A5277 /* Pods_AmazonDynamo.framework */; };
 		D99B3DF52944A75300F3EAE8 /* AmazonDynamoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99B3DF42944A75300F3EAE8 /* AmazonDynamoApp.swift */; };
 		D99B3DF92944A75600F3EAE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99B3DF82944A75600F3EAE8 /* Assets.xcassets */; };
 		D99B3DFC2944A75600F3EAE8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99B3DFB2944A75600F3EAE8 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5BEBE069022BD0527BD84351 /* Pods-AmazonDynamo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmazonDynamo.release.xcconfig"; path = "Target Support Files/Pods-AmazonDynamo/Pods-AmazonDynamo.release.xcconfig"; sourceTree = "<group>"; };
+		71A0210296B7A296E6B79120 /* Pods-AmazonDynamo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmazonDynamo.debug.xcconfig"; path = "Target Support Files/Pods-AmazonDynamo/Pods-AmazonDynamo.debug.xcconfig"; sourceTree = "<group>"; };
 		D99B3DF12944A75300F3EAE8 /* AmazonDynamo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmazonDynamo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D99B3DF42944A75300F3EAE8 /* AmazonDynamoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmazonDynamoApp.swift; sourceTree = "<group>"; };
 		D99B3DF82944A75600F3EAE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D99B3DFB2944A75600F3EAE8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DE99CAB8B35B9046F27A5277 /* Pods_AmazonDynamo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmazonDynamo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,17 +28,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57BD7FA3947BF1C06EB20603 /* Pods_AmazonDynamo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1CAF31359272145F19E6F554 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				71A0210296B7A296E6B79120 /* Pods-AmazonDynamo.debug.xcconfig */,
+				5BEBE069022BD0527BD84351 /* Pods-AmazonDynamo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CD616C735D477B335948B013 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE99CAB8B35B9046F27A5277 /* Pods_AmazonDynamo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D99B3DE82944A75300F3EAE8 = {
 			isa = PBXGroup;
 			children = (
 				D99B3DF32944A75300F3EAE8 /* AmazonDynamo */,
 				D99B3DF22944A75300F3EAE8 /* Products */,
+				1CAF31359272145F19E6F554 /* Pods */,
+				CD616C735D477B335948B013 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,9 +136,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D99B3DFF2944A75600F3EAE8 /* Build configuration list for PBXNativeTarget "AmazonDynamo" */;
 			buildPhases = (
+				01B53A62ADBE71207DC625B0 /* [CP] Check Pods Manifest.lock */,
 				D99B3DED2944A75300F3EAE8 /* Sources */,
 				D99B3DEE2944A75300F3EAE8 /* Frameworks */,
 				D99B3DEF2944A75300F3EAE8 /* Resources */,
+				DC4969D701C0FB52C2FAFB55 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -169,6 +196,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01B53A62ADBE71207DC625B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AmazonDynamo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC4969D701C0FB52C2FAFB55 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AmazonDynamo/Pods-AmazonDynamo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AmazonDynamo/Pods-AmazonDynamo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AmazonDynamo/Pods-AmazonDynamo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D99B3DED2944A75300F3EAE8 /* Sources */ = {
@@ -298,6 +367,7 @@
 		};
 		D99B3E002944A75600F3EAE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71A0210296B7A296E6B79120 /* Pods-AmazonDynamo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -327,6 +397,7 @@
 		};
 		D99B3E012944A75600F3EAE8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BEBE069022BD0527BD84351 /* Pods-AmazonDynamo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
